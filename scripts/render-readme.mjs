@@ -48,7 +48,7 @@ try {
     await page.evaluate((t) => window.__renderAt(t), 4.35);
     await page.screenshot({ path: join(frames, 'still.png'), omitBackground: true });
     webp(join(frames, 'still.png'), join(outDir, 'hero-still.webp'), 88);
-    execFileSync('python3', ['-I', join(root, 'scripts/encode-webp.py'), join(frames, 'hero-*.png'), join(outDir, 'hero.webp'), String(FPS), '82', '24'], { stdio: 'inherit' });
+    execFileSync('python3', ['-I', join(root, 'scripts/encode-webp.py'), join(frames, 'hero-*.png'), join(outDir, 'hero.webp'), String(FPS), '90', '24'], { stdio: 'inherit' });
     console.log(`hero.webp ${kb(join(outDir, 'hero.webp'))}, hero-still.webp ${kb(join(outDir, 'hero-still.webp'))}`);
     await page.close();
   }
