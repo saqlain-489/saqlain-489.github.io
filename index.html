@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Saqlain Ahmad · Full-stack & AI engineer</title>
+    <meta name="description" content="Saqlain Ahmad builds AI agents that run in production, and the full-stack TypeScript apps around them. Projects, work and contact." />
+    <meta name="theme-color" content="#04060c" />
+    <meta property="og:title" content="Saqlain Ahmad · Full-stack & AI engineer" />
+    <meta property="og:description" content="AI agents in production and the full-stack TypeScript apps around them." />
+    <meta property="og:image" content="https://saqlain-489.github.io/og.png" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <a class="sr-only" href="#main">Skip to content</a>
+    <header class="nav">
+      <a class="brand" href="#top" aria-label="Saqlain Ahmad, back to top"><span class="mark">SA</span><span>Saqlain Ahmad</span></a>
+      <nav class="nav-links" aria-label="Sections">
+        <a href="#work">Work</a>
+        <a href="#projects" class="keep">Projects</a>
+        <a href="#stack">Stack</a>
+        <a href="#contact" class="keep">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-label="Introduction">
+        <canvas id="scene" aria-hidden="true"></canvas>
+        <div class="labels" id="labels" aria-hidden="true"></div>
+        <div class="tooltip" id="tooltip" role="status" aria-live="polite"></div>
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="dot"></span><span id="role"></span></p>
+          <h1><span class="accent" id="name"></span></h1>
+          <p class="lede" id="lede"></p>
+          <div class="chips">
+            <span class="chip" id="loc"></span>
+            <span class="chip">TypeScript · Node · React · Mastra</span>
+            <span class="chip stat"><i></i><b>−85%</b>&nbsp;LLM cost via model routing</span>
+          </div>
+          <div class="cta">
+            <a class="btn primary" href="#projects">See the projects</a>
+            <a class="btn" id="gh" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn" id="mail">Email me</a>
+          </div>
+        </div>
+        <p class="hint">Drag to orbit · hover an agent</p>
+      </section>
+
+      <section class="block" id="impact" aria-label="In numbers">
+        <div class="wrap"><div class="impact" id="impact-grid"></div></div>
+      </section>
+
+      <section class="block" id="work">
+        <div class="wrap">
+          <div class="head reveal">
+            <div>
+              <p class="eyebrow"><span class="dot"></span>At work · Genius Mind Zone</p>
+              <h2 class="title">Shipped in production</h2>
+              <p class="section-lede">For about two years I have been building Ilmiya, an EdTech platform: five backend services, six client apps, and the AI that writes its courses.</p>
+            </div>
+          </div>
+          <div class="work" id="work-grid"></div>
+        </div>
+      </section>
+
+      <section class="block" id="projects">
+        <div class="wrap">
+          <div class="head reveal">
+            <div>
+              <p class="eyebrow"><span class="dot"></span>Open source</p>
+              <h2 class="title">Projects you can try</h2>
+              <p class="section-lede">Each one has a live demo, tests and CI. Click through to the code.</p>
+            </div>
+          </div>
+          <div class="projects" id="project-grid"></div>
+        </div>
+      </section>
+
+      <section class="block" id="stack">
+        <div class="wrap">
+          <div class="head reveal">
+            <div>
+              <p class="eyebrow"><span class="dot"></span>Toolbox</p>
+              <h2 class="title">What I build with</h2>
+            </div>
+          </div>
+          <div class="stack" id="stack-grid"></div>
+        </div>
+      </section>
+
+      <section class="block" id="contact">
+        <div class="wrap">
+          <div class="contact reveal">
+            <p class="eyebrow"><span class="dot"></span>Contact</p>
+            <h2>Let's build something that ships.</h2>
+            <p>Email is the fastest way to reach me. I usually reply within a day.</p>
+            <div class="cta" id="contact-cta"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer><div class="wrap"><span>© 2026 Saqlain Ahmad</span><span>Built with three.js, TypeScript and Vite · <a href="https://github.com/saqlain-489/saqlain-489.github.io">source</a></span></div></footer>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
